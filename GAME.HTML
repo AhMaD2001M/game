@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded shadow-lg text-center">
+        <h1 class="text-2xl font-bold mb-4">Rock, Paper, Scissors</h1>
+ <div id="choices" class="mb-4">
+   <button class="choice bg-blue-500 text-white py-2 px-4 rounded m-2" data-choice="rock">Rock</button>
+ <button class="choice bg-blue-500 text-white py-2 px-4 rounded m-2" data-choice="paper">Paper</button>
+            <button class="choice bg-blue-500 text-white py-2 px-4 rounded m-2" data-choice="scissors">Scissors</button>
+        </div>
+ <div id="result" class="text-lg font-bold mb-4"></div>
+   <div id="score" class="mb-4">
+            <p>User: <span id="user-score">0</span></p>
+            <p>Computer: <span id="computer-score">0</span></p>
+        </div>
+        <button id="play-again" class="bg-green-500 text-white py-2 px-4 rounded mt-4 hidden">Play Again</button>
+        <button id="quit" class="bg-red-500 text-white py-2 px-4 rounded mt-4 hidden">Quit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
